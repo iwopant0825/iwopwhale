@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="static/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="static/styles/main.css">
+    <title>Iwopwhale</title>
+    <link href="https://iwop.github.io/logo.svg" rel="shortcut icon" type="image/x-icon">
+  </head>
+  <script>
+    setTimeout(function() { }, 4000);  
+    window.addEventListener('DOMContentLoaded', function() {
+      var label = document.getElementById('text');
+      var loadingTexts = ['여기서는 그냥 게임일 뿐입니다','여기서는 그낭 게임일 뿐입니다','여기서는 그낭 게임일 뿐입니다','여기서는 그낭 게임일 뿐입니다','여기서는 그낭 게임일 뿐입니다','어차피 내일이면 다시..','얼마나 남았을까요..','지금 이 순간에도..','그게 전부 일까요..','많이 남았습니다..','어쩌면 이것들중 몇개는..','과연 누가 그랬을까요..','시작도 안했습니다..','내일의 당신은 이것을 기억할까요..'];
+      
+      var randomIndex = Math.floor(Math.random() * loadingTexts.length);
+      label.textContent = loadingTexts[randomIndex];
+    });
+  </script>
+  <body>
+    <div class="loding">
+      <h1><label for="bar" id="text"></label></h1>
+      <progress id="bar" value="0" max="100"></progress>
+    </div>
+    <script src="public/bundle.js"></script>
+  </body>
+</html>
